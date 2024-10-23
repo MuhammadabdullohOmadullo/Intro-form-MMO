@@ -1,3 +1,51 @@
+/* FONTS  */
+@font-face {
+  font-family: 'Inter 18pt';
+  src: url('../Fonts/') format('woff2'),
+  url('../Fonts/Inter18pt-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter 18pt';
+  src: url('../Fonts/Inter18pt-SemiBold.woff2') format('woff2'),
+  url('../Fonts/Inter18pt-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter 18pt';
+  src: url('../Fonts/Inter18pt-Regular.woff2') format('woff2'),
+  url('../Fonts/Inter18pt-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter 18pt';
+  src: url('../Fonts/Inter18pt-Medium.woff2') format('woff2'),
+  url('../Fonts/Inter18pt-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+/* COSTUM PROPS */
+:root {
+  --body-bg: #f1f4ff;
+  --green:  #4dc490;
+  --purple: #655fa2;
+  --red:  #f03535;
+  --text-color:#000;
+}
+
 /* GLOBAL */
 html {
   box-sizing: border-box;
@@ -8,7 +56,7 @@ html {
 *,
 *::before,
 *::after {
-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
@@ -17,11 +65,11 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background: #fff;
-  color: #222;
+  background: var(--body-bg);
+  color: var(--text-color);
 }
 
 img {
@@ -33,13 +81,15 @@ img {
 /* CONTAINER  */
 .container {
   width: 100%;
-max-width: 1200px;
-padding-left: 50px;
-padding-right: 50px;
-margin-left: auto;
-margin-right: auto;
+  max-width: 1192px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* MAIN-CONTENT */
 .main-content {
-flex-grow: 1;
+  flex-grow: 1;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
